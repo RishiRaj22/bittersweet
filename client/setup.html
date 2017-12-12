@@ -1,0 +1,37 @@
+<template name= "setup">
+    {{#if noSetup}}
+    <div id = "introduction">
+        <h1>Welcome to Bittersweet</h1>
+        <hr/>
+        <p class="apple_text">Rate others.</p>
+        <p class="apple_text">Get rated.</p>
+        <p class="apple_text">Enjoy.</p>
+        <hr/>
+        <div class= "menu_button large_text" id="existing_user">Existing user</div>
+        <div class= "menu_button large_text" id="new_user">New user</div>
+    </div>
+    {{/if}}
+    {{#if newUser}}
+        <h1 class="account_create_hint">Sign Up</h1>
+        <div class = "back_button" id = "back_button_setup"></div>
+        <form class = "center_form" id = "signup_form" >
+            <input type="text" name="name" class = "login_detail" placeholder= "Name"/>
+            <input type="text" name="uname" class = "login_detail" placeholder="Username"/>
+            <input type="password" name="pass" class = "login_detail" placeholder="Password"/>
+            <p class = "medium_text">Enter three additional attributes you want to be rated on</p>
+            <input type="text" name="attribute1" class = "login_detail" placeholder="Understanding"/>
+            <input type="text" name="attribute2" class = "login_detail" placeholder="Honest"/>
+            <input type="text" name="attribute3" class = "login_detail" placeholder="Cool"/>
+            <input type="submit" class="create_account" value="Submit"/>
+        </form>
+    {{/if}}
+    {{#if existingUser}}
+        <h1 class="account_create_hint">Login</h1>
+        <div class = "back_button" id = "back_button_setup"></div>
+        <form class = "center_form" id = "login_form">
+            <input type="text" name="uname" class = "login_detail" placeholder="Username"/>
+            <input type="password" name="pass" class = "login_detail" placeholder="Password"/>
+            <input type="submit" class="create_account" value="Submit"/>
+        </form>
+    {{/if}}
+</template>

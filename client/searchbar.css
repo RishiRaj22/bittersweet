@@ -1,0 +1,32 @@
+#user_search {
+    display: inline;
+}
+#user_search_input {
+    margin: 5px 10px;
+    font-size: 1.0rem;
+    display: inline;
+    border: none;
+    padding: 2px 0;
+    outline: none;
+    border-bottom: solid 1px #AC7972;
+    background: none;
+    color: #473349;
+}
+#user_search_submit {
+    display: inline;
+    background: none;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    color: #473349;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #473349;
+    padding: 2px;
+    text-decoration: none;
+}
+#user_search_submit:hover {
+    background: none;
+    text-decoration: none;
+    color: #543955;
+}

@@ -1,0 +1,55 @@
+.my_raters {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: medium;
+}
+.rater_text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.rater_name {
+    font-size: 1.9rem;
+}
+.rater_banner {
+    display: block;
+    padding-top: 20px;
+    clear: both;
+}
+.individual_attribute_rating {
+    font-size: 0.9rem;
+    margin: 0px;
+    padding: 0px;
+}
+.rater_image {
+    float: left;
+    background: url('/user_64.png');    
+    margin-right: 12px;
+    width: 64px;
+    height: 64px;
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+    border-radius: 70px;
+}
+.rater_rating {
+    left: 10px;
+    padding-top: 10px;
+    clear: both;
+}
+.star_filled {
+    display: inline-block;
+    background-image: url('star_filled.png');
+    height: 40px;
+    width: 40px;
+}
+.star_empty {
+    display: inline-block;
+    background-image: url('star_empty.png');
+    height: 40px;
+    width: 40px;
+}

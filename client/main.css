@@ -1,0 +1,39 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #543955;
+}
+body {
+    background-image: url("/bg.png")
+}
+footer {
+    padding: 5px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid #543955;
+    margin: 1em 0;
+    padding: 0; 
+}
+.back_button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 15px;
+    width: 48px;
+    height: 48px;
+    background: url("back.png");
+}
+.center_form {
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+}

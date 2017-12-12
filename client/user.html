@@ -1,0 +1,76 @@
+<template name = "user">
+    <div id= "back_button_user" class = "back_button"></div>
+    {{#if user}}
+    <div id="logout_button"></div>
+    <div class = "user_page_header">
+        <div class = "user_page_icon"></div>
+        <div class = "user_page_metadata">
+            <a style="font-size:2.5rem">
+                {{user.name}}
+            </a>
+            <a style="font-size:1.5rem;">
+                {{user.star}}
+            </a>
+        </div>
+    </div>
+    {{#if mypage}}
+        <div style= "margin-top: 30px;"></div>
+        {{#each user.questions}}
+            <div class= "{{this}}_question question">
+                <p class = "question" style="margin-bottom: 0px;">{{this}}</p>
+                {{>rating_hack obj = rated for = this}}
+            </div>
+        {{/each}}
+        {{#if name_changing}}
+            {{>changeName}}
+        {{else}}
+            <div class = "menu_button" id= "change_name_button">Change name</div>
+        {{/if}}
+        {{#if password_editing}}
+            {{>changePassword}}
+        {{else}}
+            <div class = "menu_button" id= "change_password_button">Change Password</div>
+        {{/if}}
+        
+    {{else}}
+        <div class= "overall_rating">
+            <p class = "question big_text">Overall</p>
+            {{>rating_hack obj = rated}}
+        </div>
+        {{#each user.questions}}
+            <div class= "{{this}}_question question">
+                <p class = "question">{{this}}</p>
+                {{>rating_hack obj=rated for=this}}
+            </div>
+        {{/each}}
+    {{/if}}
+    {{else}}
+    <h1>No user found with the user ID {{name}}</h1>
+    {{/if}}
+</template>
+<!-- In {{>rating value=stuff}}, we can only have functions without params, so to overcome
+Here I have made a template where I pass parameter as well as the object and then
+in hack method the appropriate star value is figured. -->
+<template name="rating_hack">
+    {{#if isDisabled}}
+        <div class = "medium_text" style="margin-bottom:15px;">{{hack obj}}</div>
+        {{else}}
+        {{>rating value=hack disabled=isDisabled }}
+    {{/if}}
+</template>
+
+<template name="changePassword">
+    <form class="center_form" id="password_form">
+        <input type="password" name="pass" class = "login_detail" style="font-size:2.0rem;" placeholder="New password"/>
+        <input type="submit" class = "menu_button" style="display: inline;" value ="Submit"/>
+        <button id="cancel_change_password" style="display: inline;" class = "menu_button">Cancel</button>
+    </form>
+</template>
+
+<template name="changeName">
+    <form class="center_form" id="change_name_form">
+        <input type="text" name="name" class = "login_detail" style="font-size:2.0rem;" placeholder="New name"/>
+        <input type="submit" class = "menu_button" style="display: inline;" value ="Confirm"/>
+        <button id="cancel_change_name" style="display: inline;" class = "menu_button">Cancel</button>
+    </form>
+</template>

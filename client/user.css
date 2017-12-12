@@ -1,0 +1,40 @@
+.overall_rating {
+    margin-top: 25px;
+}
+.menu_button {
+    display: block;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.8rem;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #86606a;
+    background: none;
+}
+#logout_button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    width: 48px;
+    height: 52px;
+    background: url('/logout.png');
+}
+.user_page_icon {
+    display: block;
+    text-align: center;
+    margin: auto;
+    background: rgb(202, 148, 148);
+    border-radius: 128px;
+    background: url('/user_128.png');
+    width: 128px;
+    height: 128px;
+}
+.user_page_metadata > *{
+    color: black;
+}
+.user_page_metadata {
+    text-align: center;
+}

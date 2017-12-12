@@ -1,0 +1,21 @@
+#my_rating {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 124px;
+    color: black;
+}
+#count {
+    display: inline-block;
+    font-size: 52px;
+    color: black;
+}
+#my_rating_box {
+    margin: auto;
+    position: relative;
+    display: block;
+}
+#my_rating_parent {
+    margin-top: 80px;
+    margin-bottom: 25px;
+    text-align: center;
+}

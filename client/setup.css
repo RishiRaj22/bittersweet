@@ -1,0 +1,84 @@
+.login_detail {
+    margin: 10px 15px;
+    font-size: 1.2rem;
+    width: 250px;
+    display: block;
+    border: none;
+    padding: 5px 0;
+    outline: none;
+    border-bottom: solid 1px #AC7972;
+    background: none;
+    background-position: -200px 0;
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    color: #473349;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #966E65;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:   #966E65;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:   #966E65;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:   #966E65;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:   #966E65;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:   #966E65;
+}
+
+.account_create_hint {
+  font-size: 3.2rem;
+  text-align: center;
+  color: #473349;
+}
+
+.create_account {
+    display: block;
+    background: none;
+    width: 250px;
+    font-size: 2.0rem;
+    text-align: center;
+    margin: auto;
+    color: #473349;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #473349;
+    margin-top: 50px;
+    padding: 5px;
+    text-decoration: none;
+}
+.apple_text {
+    font-size: 1.8rem;
+    margin: 2px;
+    padding: 0px;
+}
+.create_account:hover {
+    background: none;
+    text-decoration: none;
+    color: #543955;
+}
+.medium_text {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #543955;
+}
+.large_text {
+    text-align: center;
+    font-size: 2.0rem;
+    color: #543955;
+    margin: 10px;
+}
+#introduction {
+    display: block;
+    text-align: center;
+    margin: auto;
+}

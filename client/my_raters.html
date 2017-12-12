@@ -1,0 +1,27 @@
+<template name = "my_raters">
+    {{#if raters}}
+        <div class="large_text">You have been rated</div>
+    {{/if}}
+    {{#each raters}}
+    <div class = "my_raters" onclick="location.href= 'users/{{his_username}}';">
+        <div class = "rater_banner">
+            <span class = "rater_image"></span>
+            <div class = "rater_info">
+                <p class = "rater_text rater_name">{{his_name}}</p>
+                <p class = "rater_text rater_star">{{his_star}}</p>
+            </div>
+        </div>
+        <div class = "rater_rating">
+            {{> rating value=given_rating disabled=true}}
+        </div>
+        {{#each given_answers}}
+            <div class = "individual_attribute_text">
+                {{question}}
+            </div>
+            <div class = "individual_attribute_rating">
+                {{> rating value=answer disabled=true}}
+            </div>
+        {{/each}}
+    </div>
+    {{/each}}
+</template>

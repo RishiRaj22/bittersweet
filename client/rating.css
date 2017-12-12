@@ -1,0 +1,35 @@
+.rating > input:checked ~ label,
+.active.rating:not(:checked) > label:hover,
+.active.rating:not(:checked) > label:hover ~ label {
+    color:#DD5E8E;
+}
+.rating {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.overall_rating > .rating {
+    font-size: 1.6rem;
+}
+.individual_attribute_rating > .rating {
+    display: inline;
+    font-size: 0.8rem;
+    margin: 1px;
+    padding: 1px;
+}
+.individual_attribute_text {
+    display: inline;
+}
+.active.rating > input:checked + label:hover,
+.active.rating > input:checked ~ label:hover,
+.active.rating > label:hover ~ input:checked ~ label,
+.active.rating > input:checked ~ label:hover ~ label {
+    color:#EE7EAE;
+}
+.question {
+    text-align: center;
+    margin: auto;
+}
+.rating > label,.rating > .reset-stars:before {
+    color: #43303A;
+}
