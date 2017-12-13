@@ -6,6 +6,9 @@ Template.my_rating.helpers({
     profile : function() {
         var a = UserOverview.findOne({username: Meteor.user().username});
         return a;
+    },
+    hasBeenRated: function() {
+        return UserOverview.findOne({username: Meteor.user().username}).rater_count > 0;
     }
 });
 Template.my_rating.events({

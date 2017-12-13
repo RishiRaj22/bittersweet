@@ -1,8 +1,12 @@
 <template name="my_rating">
-    <div id = "my_rating_parent">
-        <div id = "my_rating_box">
-            <div id = "my_rating" >{{profile.star}}</div>
-            <div id = "count" href = "#">{{profile.rater_count}}</div>
+    {{#if hasBeenRated}}
+        <div id = "my_rating_parent">
+            <div id = "my_rating_box">
+                <div id = "my_rating" >{{profile.star}}</div>
+                <div id = "count" href = "#">{{profile.rater_count}}</div>
+            </div>
         </div>
-    </div>
+    {{else}}
+        {{> share}}
+    {{/if}}
 </template>

@@ -3,8 +3,3 @@ Template.share.helpers({
         return Meteor.user().username;
     }
 })
-Template.share.events({
-    "click #back_button_share"() {
-        Router.go('/')
-    }
-})

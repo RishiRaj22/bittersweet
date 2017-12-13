@@ -44,5 +44,5 @@ Router.route('/users/:name', {
 });
 
 Router.route('/share', {
-  name: "share"
+  name: "sp"
 });
